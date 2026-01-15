@@ -165,9 +165,14 @@ dvc repro --single --force generate_different_distances_wind_speed_analysis
 dvc repro --single --force generate_realistic_thermal_trajectory_plots
 ```
 #### 5. Supplementary Videos
-* **Realistic Thermal**: Shows agent behavior when flying in realistic thermal along birds, `dvc.yaml` stage: `generate_glider_with_birds_in_realistic_thermal_video`
-* **Training**: Generates videos about the agent during training. `dvc.yaml` stages:
-	* `single_agent_eval_for_training_video_160m`
-	* `generate_single_agent_training_video_160m`
-	* `single_agent_eval_for_training_video_300m`
-	* `generate_single_agent_training_video_300m`
+* **Realistic Thermal**: Shows agent behavior when flying in realistic thermal along birds:
+  ```
+  dvc repro --single --force generate_glider_with_birds_in_realistic_thermal_video
+  ```
+* **Training**: Evaluate and generates videos about the agent during training:
+  ```
+  dvc repro --single --force single_agent_eval_for_training_video_160m
+  dvc repro --single --force generate_single_agent_training_video_160m
+  dvc repro --single --force single_agent_eval_for_training_video_300m
+  dvc repro --single --force generate_single_agent_training_video_300m
+  ```
