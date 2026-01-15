@@ -151,7 +151,7 @@ dvc repro --single --force eval-peer-informed-student-with-birds-using-bird-wing
 Evaluations in realistic thermals require longer runtimes. To reduce evaluation time, you may decrease the number of episodes by modifying the `eval.from_different_distances.episode_count` and `eval.from_close_distance.episode_count`  parameters in `params.yaml`.
 #### 4. Analysis & Figures
 These stages consume evaluation results to produce the statistical insights used in the paper. Results can be found under `results/analysis`:
-- **Thermal Localization**: `generate_altitude_achievement_percent_by_distance_analysis` measures how peer information helps the agent locate the thermal (**Figure 5 D-E**, **Table S13-S14**).
+- **Thermal Localization**: `generate_altitude_achievement_percent_by_distance_analysis` measures how peer information helps the agent locate the thermal (**Figure 5 D-E**, **Tables S13-S14**).
 - **Thermalling Performance**: `generate_close_distance_vertical_velocity_analysis` compares agent vs. bird climb rates inside realistic thermals (**Figure 5 C**). `generate_close_distance_episode_success_analysis` generates episode success analysis.
 - **Environmental Robustness**: `generate_different_distances_wind_speed_analysis` examines how wind speed impacts success of locating the thermal (**Figure S20**).
 - **Visualization**: `generate_realistic_thermal_trajectory_plots` creates trajectory comparison plot (**Figure 5 B**).
