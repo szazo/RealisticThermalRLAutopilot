@@ -2575,13 +2575,15 @@ stages:
       size: 2108158
   load_snapshot_archive:
     cmd:
+    - rm -rf snapshot_v1.zip
+    - http --download 
+      "https://zenodo.org/records/18243205/files/snapshot_v1.zip?download=1"
     - unzip -o snapshot_v1.zip
     deps:
-    - path: 
-        https://sandbox.zenodo.org/records/420119/files/snapshot_v1.tar.gz?download=1
+    - path: https://zenodo.org/records/18243205/files/snapshot_v1.zip?download=1
       hash: md5
-      checksum: '151889245835010429683829981080907534222'
-      size: 6220338324
+      checksum: '145297149858724832966568421556230513991'
+      size: 5676400312
   create_snapshot_archive:
     cmd:
     - rm -rf tmp_snapshot

@@ -455,4 +455,4 @@ stages:
       - http --download "https://zenodo.org/records/18243205/files/snapshot_v1.zip?download=1"
       - unzip -o snapshot_v1.zip
     deps:
-      - https://sandbox.zenodo.org/records/420119/files/snapshot_v1.tar.gz?download=1
+      - https://zenodo.org/records/18243205/files/snapshot_v1.zip?download=1
