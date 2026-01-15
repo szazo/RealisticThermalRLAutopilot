@@ -195,7 +195,7 @@ tasks:
           TANGENT_DISTANCE_M: 3.53553390
           STARTING_DISTANCE_M: 3.53553390
           AGENT_SEQ_LENGTH: '{{.AGENT_SEQ_LENGTH}}'
-          OUTPUT_DIR: 'results/eval/realistic/peer_informed/from_close_distance_using_bird_wing_loadings/student_with_birds/{{.EPISODE_COUNT}}_episodes'
+          OUTPUT_DIR: 'results/eval/realistic/peer_informed/from_close_distance_using_bird_wing_loadings/student_with_birds/{{.POLICY_RUN_ID}}/{{.EPISODE_COUNT}}_episodes'
           OUTPUT_FILENAME: 'student_with_birds_using_bird_wing_loadings'
           MULTIRUN_OVERRIDE: '+realistic/eval/peer_informed_with_birds/using_bird_wing_loadings="glob({{.GLOB}})"'
 
@@ -208,7 +208,7 @@ tasks:
           AGENT_SEQ_LENGTH: 1
           TANGENT_DISTANCE_M: 3.53553390
           STARTING_DISTANCE_M: 3.53553390
-          OUTPUT_DIR: 'results/eval/realistic/peer_informed/from_close_distance_using_bird_wing_loadings/student_alone/{{.EPISODE_COUNT}}_episodes'
+          OUTPUT_DIR: 'results/eval/realistic/peer_informed/from_close_distance_using_bird_wing_loadings/student_alone/{{.POLICY_RUN_ID}}/{{.EPISODE_COUNT}}_episodes'
           OUTPUT_FILENAME: 'student_alone_using_bird_wing_loadings'
           MULTIRUN_OVERRIDE: '+realistic/eval/peer_informed_with_birds/using_bird_wing_loadings="glob({{.GLOB}})"'
 
