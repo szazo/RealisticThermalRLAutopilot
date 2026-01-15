@@ -35,7 +35,7 @@ python -m pip install --editable ".[dev,thermalmodelling]"
 dvc pull
 ```
 
-Alternatively, you can pull the snapshot data directly from [Zenodo (https://zenodo.org/records/18243205)]([https://zenodo.org/records/18243205]) using the following command:
+Alternatively, you can pull the snapshot data directly from [Zenodo (https://zenodo.org/records/18243205)](https://zenodo.org/records/18243205) using the following command:
 
 ```shell
 dvc repro --force --single load_snapshot_archive 
