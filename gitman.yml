@@ -1,0 +1,10 @@
+location: .gitman
+sources:
+  - repo: https://github.com/LacerdaPT/ReverseEngineeringThermalSoaring.git
+    name: ThermalModelling
+    rev: 9965c8ebb0a0647b3384bfb8af2cf73ef97d091f
+    links:
+      - target: thirdparty/thermalmodelling/src
+default_group: ''
+groups:
+  -
