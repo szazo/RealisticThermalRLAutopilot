@@ -5,8 +5,8 @@
 
 Clone the main repository and initialize the realistic thermal model repository using [gitman](https://gitman.readthedocs.io/en/latest/):
 ```bash
-git clone https://github.com/szazo/RealisticThermalRLAutopilot.git gliderl
-cd gliderl
+git clone https://github.com/szazo/RealisticThermalRLAutopilot.git
+cd RealisticThermalRLAutopilot
 pipx run gitman install
 ```
 ### 2. Environment Configuration
